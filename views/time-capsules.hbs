@@ -1,0 +1,15 @@
+<div class="public-capsules">
+  <h2>Public Capsules</h2>
+   <!-- Add a link to the create-capsules page -->
+  <a href="/create-capsule">Create Capsule</a>
+  {{#each timeCapsules}}
+    <div class="time-capsule">
+      <h3>Recipient: {{recipient}}</h3>
+      <p>Delivery Date: {{deliveryDate}}</p>
+      <p>Public: {{isPublic}}</p>
+      
+      <h4>Contents</h4>
+      <p>Message: {{contents.message}}</p>
+    </div>
+  {{/each}}
+</div>

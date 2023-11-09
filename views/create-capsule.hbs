@@ -1,0 +1,20 @@
+<h2>Create Time Capsule</h2>
+
+<form action="/create-capsule" method="post">
+    <label for="recipient">Recipient:</label>
+    <input type="text" id="recipient" name="recipient" required><br><br>
+
+    <label for="deliveryDate">Delivery Date:</label>
+    <input type="date" id="deliveryDate" name="deliveryDate" required><br><br>
+
+   <label for="isPublic">Is Public:</label>
+<select id="isPublic" name="isPublic">
+  <option value="true">True</option>
+  <option value="false">False</option>
+</select><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Create Capsule">
+</form>
