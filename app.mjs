@@ -21,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // configure templating to hbs
 app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
 
 // body parser (req.body)
 app.use(express.urlencoded({ extended: false }));
