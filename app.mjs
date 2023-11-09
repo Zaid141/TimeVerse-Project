@@ -39,7 +39,7 @@ app.use(passport.session());
 
 // Route for the homepage
 app.get('/', (req, res) => {
-  res.render('./home');
+  res.render('home.hbs');
 });
 
 // Add a new route to render the create capsule form
