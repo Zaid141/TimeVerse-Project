@@ -3,7 +3,10 @@
     "builds":[
         {
             "src": "app.mjs",
-            "use": "@vercel/node"
+            "use": "@vercel/node",
+            "env": {
+                "DSN": "mongodb+srv://zaidshahid141414:Zaid1414@cluster0.mmkj9i3.mongodb.net/?retryWrites=true&w=majority"
+              }
         }
     ],
     "routes": [
@@ -11,5 +14,8 @@
             "src": "/(.*)",
             "dest": "/app.mjs"
         }
-    ]
+    ],
+    "env": {
+        "DSN": "mongodb+srv://zaidshahid141414:Zaid1414@cluster0.mmkj9i3.mongodb.net/?retryWrites=true&w=majority"
+      }
 }
