@@ -4,7 +4,11 @@
 import mongoose from 'mongoose';
 
 const { Schema, model } = mongoose;
-mongoose.connect(process.env.DSN);
+mongoose
+    .connect(process.env.DSN, {
+    })
+    .then(() => console.log('MongoDB database Connected'))
+    .catch((err) => console.log(err))
 
 // Content schema
 const contentSchema = new Schema({
