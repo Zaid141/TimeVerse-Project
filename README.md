@@ -80,8 +80,6 @@ An Example Time Capsule with Embedded Contents:
 
 ## [Link to Initial Main Project File](app.mjs) 
 
-(__TODO__: create a skeleton Express application with a package.json, app.mjs, views folder, etc. ... and link to your initial app.mjs)
 
-## Annotations / References Used
 
 
